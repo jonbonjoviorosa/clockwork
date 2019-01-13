@@ -1,0 +1,28 @@
+﻿#main-wrapper {
+    width: 100%;
+}
+
+.boxed #main-wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+}
+
+    .boxed #main-wrapper .sidebar-footer {
+        position: absolute;
+    }
+
+    .boxed #main-wrapper .footer {
+        display: none;
+    }
+
+.page-wrapper {
+    background: #eef5f9;
+    padding-bottom: 60px;
+}
+
+.container-fluid {
+    padding: 0 30px 25px 30px;
+}

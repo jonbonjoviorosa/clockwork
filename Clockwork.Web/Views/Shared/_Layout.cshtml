@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
+</head>
+<body>
+    <div id="main-wrapper">
+        <div class="page-wrapper">            
+            @RenderBody()
+        </div>
+    </div>
+    <script src="@Url.Content("https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")"></script>
+    <script src="@Url.Content("https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

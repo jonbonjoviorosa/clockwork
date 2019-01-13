@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "AWH Clockwork Project";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-md-12">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            AWH Clockwork Project @ViewData["Version"] on @ViewData["Runtime"]!
+        </div>
+        <div class="panel-body">
+            <table class="display nowrap table" style="width:100%" id="tbl-list">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Time</th>
+                        <th>Client IP</th>
+                        <th>UTC Time</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="panel-footer"><button type="submit" id="btn_add" class="btn-primary">Add time</button></div>
+    </div>
+</div>
+@section Scripts {
+    <script type="text/javascript" src="@Url.Content("/Scripts/myScript.js")"></script>
+}
