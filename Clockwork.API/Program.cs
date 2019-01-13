@@ -20,7 +20,7 @@ namespace Clockwork.API
            .UseContentRoot(Directory.GetCurrentDirectory())
            .UseIISIntegration()
            .UseStartup<Startup>()
-           .UseUrls("http://localhost:58093/")
+           .UseUrls("http://localhost:53547/")
            .Build();
 
             host.Run();
